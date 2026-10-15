@@ -1,0 +1,15 @@
+export PYTHONPATH=$PYTHONPATH:$PWD
+
+# ===== 密钥（填入自己的，勿提交到仓库）=====
+export API_KEY="Bearer <your-volcengine-ark-api-key>"   # 火山方舟（豆包）API Key
+export AMAP_MAPS_API_KEY="<your-amap-api-key>"          # 高德地图 API Key
+
+# ===== 大模型接口 =====
+export BASE_URL="https://ark.cn-beijing.volces.com/api/v3/chat/completions"
+export BOT_URL="https://ark.cn-beijing.volces.com/api/v3/bots/chat/completions"
+
+# ===== 本地微服务 =====
+export REJECT_URL="http://127.0.0.1:8007/reject-server/v1"
+export INTENT_URL="http://127.0.0.1:8008/intent-server/v1"
+export NLU_URL="http://127.0.0.1:8009/chatnlu-server/v1"
+export ENTRY_URL="http://127.0.0.1:8080"

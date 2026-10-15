@@ -1,0 +1,58 @@
+# ===== 密钥与本地配置（禁止入库）=====
+llm对话多轮/config/config.ini
+.env
+*.env
+*.pem
+*.key
+
+# ===== 模型权重与训练数据（体积大，不随仓库分发）=====
+模型文件/
+llm对话多轮/train/data/
+llm对话多轮/train/pretrained/
+llm对话多轮/train/saved/
+*.ckpt
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# ===== 运行期日志与评测产物 =====
+llm对话多轮/log/
+llm对话多轮/test/result/
+*.log
+nohup.out
+
+# 例外：保留训练指标日志（可复核 README 中的模型指标）
+!llm对话多轮/train/result/*.log
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ===== 虚拟环境 =====
+venv/
+.venv/
+env/
+ENV/
+conda-env/
+
+# ===== 编辑器与系统文件 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+__MACOSX/
+Thumbs.db
+desktop.ini
